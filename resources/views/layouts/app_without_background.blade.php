@@ -27,9 +27,9 @@
       rel="stylesheet">
 
 </head>
-<body style="background-image: url('../img/backlay.jpg');">
+<body>
     <div id="app">
-        <nav class="navbar navbar-custom navbar-expand-md navbar-light shadow-sm fixed-top" style="background-color: rgba(14, 29, 52, 0.8);">
+        <nav class="navbar navbar-custom navbar-expand-md navbar-light shadow-sm" style="background-color: rgba(14, 29, 52, 0.8);">
             <div class="container">
                 <a class="navbar-brand text-white" href="{{ url('/') }}" style="font-family: 'Inter', sans-serif;font-size: 30px;font-weight: 700;">
                     {{ config('app.name', 'Laravel') }}
