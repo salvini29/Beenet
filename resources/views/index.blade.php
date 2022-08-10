@@ -73,7 +73,7 @@
           <p data-aos="fade-up" data-aos-delay="100">Nuestros panales diseñados mediante tecnología 3D nos permiten equiparlos con sensores para poder hacer un seguimiento en tiempo real del estado de estos y su producción</p> 
 
           <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-            <input type="text" class="form-control" placeholder="ZIP code or CitY">
+            <input type="text" class="form-control" placeholder="Codigo panal">
             <button type="submit" class="btn btn-primary">Buscar</button>
           </form>
 

@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -27,9 +27,9 @@
       rel="stylesheet">
 
 </head>
-<body>
+<body style="background-image: url('../img/backlay.jpg');">
     <div id="app">
-        <nav class="navbar navbar-custom navbar-expand-md navbar-light shadow-sm" style="background-color: rgba(14, 29, 52, 0.8);">
+        <nav class="navbar navbar-custom navbar-expand-md navbar-light shadow-sm fixed-top" style="background-color: rgba(14, 29, 52, 0.8);">
             <div class="container">
                 <a class="navbar-brand text-white" href="{{ url('/') }}" style="font-family: 'Inter', sans-serif;font-size: 30px;font-weight: 700;">
                     {{ config('app.name', 'Laravel') }}
@@ -91,7 +91,10 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 
+    {{-- Includable JS --}}
+    @yield('scripts')
 
 </body>
 </html>
