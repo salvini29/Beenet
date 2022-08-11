@@ -17,7 +17,7 @@
 
                             <div class="col-md-6 input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1"><i class="material-icons">email</i></span>
+                                    <span class="input-group-text" id="basic-addon1" style="background-color:#ADD8E6;"><i class="material-icons">email</i></span>
                                 </div>
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Mail">
 
@@ -35,7 +35,7 @@
 
                             <div class="col-md-6 input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1"><i class="material-icons">lock</i></span>
+                                    <span class="input-group-text" id="basic-addon1" style="background-color:#ADD8E6;"><i class="material-icons">lock</i></span>
                                 </div>
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Contraseña">
 

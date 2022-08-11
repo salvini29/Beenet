@@ -5,13 +5,12 @@
 <div class="container">
 
       @include('modals.modal_carga')
-      <section class="jumbotron text-center">
+      <section class="jumbotron text-center" style="margin-bottom: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
         <div class="container">
-          <h1 class="jumbotron-heading">Album example</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <h1 class="jumbotron-heading">Mis Colmenas</h1>
+          <p class="lead text-muted">Agrega con el boton tus colmenas para poder acceder a ellas facilmente. Podras visualizar la actividad de sus sensores y controlar variables. Es importante cargar los datos bien!</p>
           <p>
-            <a href="#" class="btn btn-primary my-2" data-toggle="modal" data-target="#modal_carga">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            <a href="#" class="btn btn-primary my-2" data-toggle="modal" data-target="#modal_carga">Agrega tu Colmena</a>
           </p>
         </div>
       </section>
@@ -27,8 +26,8 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Visualizar</button>
+                      <button type="button" class="btn btn-sm btn-outline-danger">Control</button>
                     </div>
                     <small class="text-muted"><i class="material-icons" style="color: #00FF00; font-size: 28px;">hive</i></small>
                   </div>
@@ -45,7 +44,7 @@
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
-                    <small class="text-muted"><i class="material-icons" style="color: red; font-size: 28px;">hive</i></small>
+                    <small class="text-muted"><i class="material-icons" style="color: #ff5858; font-size: 28px;">hive</i></small>
                   </div>
                 </div>
               </div>
