@@ -68,7 +68,7 @@
 
                             <div class="col-md-6">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
+                                    {{ __('Loguearse') }}
                                 </button>
                             </div>
                         </div>

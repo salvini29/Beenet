@@ -69,11 +69,12 @@
     <div class="container">
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">Seguimiento con sensores para panales</h2>
+          <h2 data-aos="fade-up">Seguimiento con sensores para colmenas</h2>
           <p data-aos="fade-up" data-aos-delay="100">Nuestros panales diseñados mediante tecnología 3D nos permiten equiparlos con sensores para poder hacer un seguimiento en tiempo real del estado de estos y su producción</p> 
 
-          <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-            <input type="text" class="form-control" placeholder="Codigo panal">
+          <form action="{{ route('searchBarPost') }}" method="post" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+            @csrf
+            <input type="text" class="form-control" id="codigo_colmena" name="codigo_colmena" placeholder="Codigo colmena">
             <button type="submit" class="btn btn-primary">Buscar</button>
           </form>
 

@@ -27,7 +27,7 @@
       rel="stylesheet">
 
 </head>
-<body style="background-image: url('../img/backlay.jpg');">
+<body style="background-image: url('../img/backblur.jpg');">
     <div id="app">
         <nav class="navbar navbar-custom navbar-expand-md navbar-light shadow-sm fixed-top" style="background-color: rgba(14, 29, 52, 0.8);">
             <div class="container">

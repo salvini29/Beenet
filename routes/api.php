@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/loginUser', [App\Http\Controllers\ApiController::class, 'loginUser'])->name('loginUser')->middleware('apikey.validator');
+Route::post('/registerUser', [App\Http\Controllers\ApiController::class, 'registerUser'])->name('registerUser')->middleware('apikey.validator');
+Route::post('/getColmenasUser', [App\Http\Controllers\ApiController::class, 'getColmenasUser'])->name('getColmenasUser')->middleware('apikey.validator');

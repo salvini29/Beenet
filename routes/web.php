@@ -19,7 +19,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::post('/create_colmena', [App\Http\Controllers\BaseController::class, 'createColmena'])->name('createColmena')->middleware('auth');
 
 Route::get('/', [App\Http\Controllers\BaseController::class, 'landing'])->name('landing');
-Route::get('/dashboard', [App\Http\Controllers\BaseController::class, 'dashboard'])->name('dashboard');
+Route::post('/searchBarPost', [App\Http\Controllers\BaseController::class, 'searchBarPost'])->name('searchBarPost');
+Route::get('/dashboard/{codigo}', [App\Http\Controllers\BaseController::class, 'dashboard'])->name('dashboard');
 
 
 Route::get('/testxd', [App\Http\Controllers\BaseController::class, 'testxd'])->name('testxd')->middleware('auth');

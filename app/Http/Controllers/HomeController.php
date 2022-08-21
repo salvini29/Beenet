@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use App\Models\Colmena;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -23,6 +26,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $logged_user = Auth::user();
+        $colmenas_de_usuarios = $logged_user->colmenas()->get();
+        return view('home')->with('colmenas',$colmenas_de_usuarios);
     }
 }
