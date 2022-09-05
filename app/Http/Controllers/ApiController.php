@@ -42,4 +42,16 @@ class ApiController extends Controller
         }
         return response()->json($user->colmenas()->get());
     }
+    public function createColmenaApi(Request $request)
+    {
+        $mobile_user = User::where('email',$request->mail_usuario)->first();
+        try {
+            $mobile_user->colmenas()->create(['nombre_colmena' => $request->nombre, 'codigo_colmena' => $request->codigo, 'activa' => $request->activa]);
+            return response()->json(true);
+        }
+        catch (\Illuminate\Database\QueryException $e) {
+            //dd($e->getMessage()); PARA OBTENER ERROR
+            return response()->json(false);
+        }
+    }
 }

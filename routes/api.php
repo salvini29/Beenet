@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/loginUser', [App\Http\Controllers\ApiController::class, 'loginUser'])->name('loginUser')->middleware('apikey.validator');
 Route::post('/registerUser', [App\Http\Controllers\ApiController::class, 'registerUser'])->name('registerUser')->middleware('apikey.validator');
 Route::post('/getColmenasUser', [App\Http\Controllers\ApiController::class, 'getColmenasUser'])->name('getColmenasUser')->middleware('apikey.validator');
+Route::post('/createColmena', [App\Http\Controllers\ApiController::class, 'createColmenaApi'])->name('createColmenaApi')->middleware('apikey.validator');
