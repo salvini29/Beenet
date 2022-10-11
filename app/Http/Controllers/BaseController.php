@@ -33,10 +33,15 @@ class BaseController extends Controller
             return redirect()->route('home')->with('failed', 'No se ha podido crear la colmena!');
         }
     }
-    public function testxd(Request $request)
+    public function modifyColmena(Request $request)
     {
-        $user = Auth::user();
-        return redirect()->route('home')->with('failed', 'El usuario ya tenia mail UCA');
-        dd( $user->colmenas()->create(['nombre_colmena' => 'asd', 'codigo_colmena' => 'asd2', 'activa' => true]) );
+        try {
+            Colmena::where('id',$request->idConf)->update(['nombre_colmena' => $request->nombreConf, 'activa' => $request->activaConf]);
+            return redirect()->route('home')->with('success', 'Se ha modificado la colmena!');
+        }
+        catch (\Illuminate\Database\QueryException $e) {
+            //dd($e->getMessage()); PARA OBTENER ERROR
+            return redirect()->route('home')->with('failed', 'No se ha podido modificar la colmena!');
+        }
     }
 }

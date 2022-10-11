@@ -82,29 +82,29 @@
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Clients</p>
+                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Colmenas</p>
               </div>
             </div><!-- End Stats Item -->
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
+                <span data-purecounter-start="0" data-purecounter-end="105" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Recolecciones</p>
               </div>
             </div><!-- End Stats Item -->
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Support</p>
+                <span data-purecounter-start="0" data-purecounter-end="320" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Panales</p>
               </div>
             </div><!-- End Stats Item -->
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Workers</p>
+                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Sensores</p>
               </div>
             </div><!-- End Stats Item -->
 
@@ -124,30 +124,28 @@
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-lightbulb"></i></div>
             <div>
-              <h4 class="title">Lorem Ipsum</h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <h4 class="title">Soluciones innovadoras</h4>
+              <p class="description">Nuestras soluciones tienen diseños innovadores que mejoran la calidad de vida y la performance de las colmenas</p>
             </div>
           </div>
           <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-plus"></i></div>
             <div>
-              <h4 class="title">Dolor Sitema</h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <h4 class="title">Impacto positivo</h4>
+              <p class="description">Estamos dedicados completamente a generar un impacto positivo en este organismo tan importante
+              para el mundo natural</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-bug"></i></div>
             <div>
-              <h4 class="title">Sed ut perspiciatis</h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <h4 class="title">Para Apicultores</h4>
+              <p class="description">Diseñamos todo para hacer nuestro sistema interactivo con los apicultores provyendo herramientas para facilitar su trabajo</p>
             </div>
           </div><!-- End Service Item -->
 

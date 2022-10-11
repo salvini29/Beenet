@@ -5,6 +5,7 @@
 <div class="container">
 
       @include('modals.modal_carga')
+      @include('modals.modal_config')
       <section class="jumbotron text-center" style="margin-bottom: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
         <div class="container">
           <h1 class="jumbotron-heading">Mis Colmenas</h1>
@@ -26,8 +27,12 @@
                 <div class="card mb-4 box-shadow">
                   <img class="card-img-top" src="{{ asset('img/panal.jpg') }}" style="height: 225px; width: 100%; display: block;" alt="Card image cap">
                   <div class="card-body">
-                    <p class="card-text"><strong>Nombre: {{ $colmena->nombre_colmena }}</strong><br><strong>Codigo: {{ $colmena->codigo_colmena }}</strong>
-                    </p>
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <p class="card-text"><strong>Nombre: {{ $colmena->nombre_colmena }}</strong><br><strong>Codigo: {{ $colmena->codigo_colmena }}</strong></p>
+                      <a class="mb-4" href="#" data-toggle="modal" data-target-id="{{ $colmena->id }}" data-target-nombre="{{ $colmena->nombre_colmena }}" data-target-codigo="{{ $colmena->codigo_colmena }}" data-target-activa="{{ $colmena->activa }}" data-target="#modal_config"><small class="text-muted"><i class="material-icons" style="font-size: 28px;" title="Config">settings</i></small></a>
+                    </div>
+
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a class="btn btn-sm btn-outline-info" href="{{ route('dashboard', $colmena->codigo_colmena) }}">Visualizar</a>
@@ -59,6 +64,23 @@
         function openModalCarga() {
             $('#modal_carga').modal('show');
         };
+
+        function openModalConfig() {
+            $('#modal_config').modal('show');
+        };
+        
+        $(document).ready(function () {
+          $("#modal_config").on("show.bs.modal", function (e) {
+            var id_conf = $(e.relatedTarget).data('target-id');
+            var nombre_conf = $(e.relatedTarget).data('target-nombre');
+            var codigo_conf = $(e.relatedTarget).data('target-codigo');
+            var activa_conf = $(e.relatedTarget).data('target-activa');
+            $('#codigoConf').val(codigo_conf);
+            $('#nombreConf').val(nombre_conf);
+            $('#activaConf').val(activa_conf);
+            $('#idConf').val(id_conf);
+          });
+        });
 
     </script>
 
