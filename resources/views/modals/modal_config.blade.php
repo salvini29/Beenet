@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Eliminar</button>
+                    <button id="deleteBtn" type="button" class="btn btn-danger" onclick="deleteColmenaConfig(this.value)">Eliminar</button>
                     <button type="submit" class="btn btn-info">Modificar</button>
                 </div>
         </form>

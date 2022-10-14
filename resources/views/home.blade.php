@@ -61,6 +61,33 @@
 
     <script>
 
+        function deleteColmenaConfig(id) {
+          
+          Swal.fire({
+            title: 'Está seguro?',
+            text: "No podra deshacer la acción!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, borrar!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              
+              $.post("{{ route('deleteColmena') }}",
+               { "_token": "{{ csrf_token() }}", "id":id }, 
+               function(data, status) {
+                  console.log(data);
+                  if ( status == 'success' )
+                  {
+                    window.location.replace("{{ route('redirectSuccess') }}");
+                  }
+                  
+                });
+            }
+          })
+        };
+
         function openModalCarga() {
             $('#modal_carga').modal('show');
         };
@@ -79,6 +106,7 @@
             $('#nombreConf').val(nombre_conf);
             $('#activaConf').val(activa_conf);
             $('#idConf').val(id_conf);
+            $('#deleteBtn').val(id_conf);
           });
         });
 

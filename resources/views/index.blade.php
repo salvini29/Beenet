@@ -145,7 +145,7 @@
             <div class="icon flex-shrink-0"><i class="fa-solid fa-bug"></i></div>
             <div>
               <h4 class="title">Para Apicultores</h4>
-              <p class="description">Diseñamos todo para hacer nuestro sistema interactivo con los apicultores provyendo herramientas para facilitar su trabajo</p>
+              <p class="description">Diseñamos todo para hacer nuestro sistema interactivo con los apicultores proveyendo herramientas para facilitar su trabajo</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -164,30 +164,30 @@
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
           </div>
           <div class="col-lg-6 content order-last  order-lg-first">
-            <h3>About Us</h3>
+            <h3>Nosotros</h3>
             <p>
-              Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
+              Nuestro emprendimiento fue creado para operar como un grupo unido de personas con un  propósito común: generar un perdurable y auténtico cambio en el mundo. Nos caracterizamos por tener un sólido conjunto de principios y valores.
             </p>
             <ul>
               <li data-aos="fade-up" data-aos-delay="100">
                 <i class="bi bi-diagram-3"></i>
                 <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                  <h5>Nuestro propósito</h5>
+                  <p>Generar cambios auténticos y beneficiosos para el mundo.</p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-fullscreen-exit"></i>
                 <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                  <h5>Nuestra misión</h5>
+                  <p>Construir un gran proyecto que atraiga, emocione y genere lealtad por parte de los apicultores.</p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-broadcast"></i>
                 <div>
-                  <h5>Voluptatem et qui exercitationem</h5>
-                  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                  <h5>Nuestros valores</h5>
+                  <p>Mantener altos estándares y condiciones de servicio al cliente, observar altos estándares éticos, ofrecerles un servicio a los apicultores que les facilite varios procedimientos y generar un impacto positivo en el mundo natural.</p>
                 </div>
               </li>
             </ul>
@@ -216,12 +216,12 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Non consectetur a erat nam at lectus urna duis?
+                    ¿En qué me beneficio al utilizar estas colmenas inteligentes? 
                   </button>
                 </h3>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    Los panales inteligente van a eficientizar el proceso de recolección y buscan resolver la reducción de la mortalidad de las abejas a través de una mejora de su calidad de vida.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -230,12 +230,12 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                    ¿Cómo funciona el seguimiento de los panales?
                   </button>
                 </h3>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    El seguimiento de los paneles es en tiempo real, ofreciendo un control y una tranquilidad continua.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -244,12 +244,12 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                    ¿Cómo es el uso de la aplicación?
                   </button>
                 </h3>
                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    El proceso de utilizar Beenet es sumamente sencillo, manejable e interactivo. La página está diseñada para ofrecerte toda la información que necesites de la manera más conveniente posible!
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -258,13 +258,12 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                    ¿Cómo me puedo contactar?
                   </button>
                 </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    Estamos disponibles para cualquier consulta en <strong>info@beenet.com</strong>
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -273,12 +272,13 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                    ¿Que sensores utilizamos?
                   </button>
                 </h3>
                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                    Medimos varias variables naturales. Temperatura interior-exterior, presión atmosférica interior-exterior, humedad interior-exterior
+                    y peso.
                   </div>
                 </div>
               </div><!-- # Faq item-->

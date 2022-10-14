@@ -44,4 +44,22 @@ class BaseController extends Controller
             return redirect()->route('home')->with('failed', 'No se ha podido modificar la colmena!');
         }
     }
+    public function deleteColmena(Request $request)
+    {
+        try {
+            return Colmena::where('id',$request->id)->delete();
+        }
+        catch (\Illuminate\Database\QueryException $e) {
+            //dd($e->getMessage()); PARA OBTENER ERROR
+            return false;
+        }
+    }
+    public function redirectSuccess(Request $request)
+    {
+        return redirect()->route('home')->with('success', 'Se ha eliminado la colmena!');
+    }
+    public function redirectFailed(Request $request)
+    {
+        return redirect()->route('home')->with('failed', 'No se ha eliminado la colmena!');
+    }
 }
