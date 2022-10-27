@@ -54,4 +54,58 @@ class ApiController extends Controller
             return response()->json(false);
         }
     }
+    public function modifyColmenaApi(Request $request)
+    {
+        $mobile_user = User::where('email',$request->mail_usuario)->first();
+        if(!empty($mobile_user))
+        {
+            try {
+                $response = Colmena::where('id',$request->id_colmena_seleccionada)->get();
+                if( ($response[0])->user_id == $mobile_user->id )
+                {   
+                    Colmena::where('id',$request->id_colmena_seleccionada)->update(['nombre_colmena' => $request->modif_nombre, 'activa' => $request->modif_activa]);
+                    return response()->json(true); 
+                }
+                else
+                {
+                    return response()->json("No se puede modificar una Colmena ajena!");
+                }
+            }
+            catch (\Illuminate\Database\QueryException $e) {
+                //dd($e->getMessage()); PARA OBTENER ERROR
+                return response()->json(false);
+            }
+        }
+        else
+        {
+            return response()->json("No existe un usuario con ese mail!");
+        }
+    }
+    public function deleteColmenaApi(Request $request)
+    {
+        $mobile_user = User::where('email',$request->mail_usuario)->first();
+        if(!empty($mobile_user))
+        {
+            try {
+                $response = Colmena::where('id',$request->id_colmena_seleccionada)->get();
+                if( ($response[0])->user_id == $mobile_user->id )
+                {   
+                    Colmena::where('id',$request->id_colmena_seleccionada)->delete();
+                    return response()->json(true); 
+                }
+                else
+                {
+                    return response()->json("No se puede eliminar una Colmena ajena!");
+                }
+            }
+            catch (\Illuminate\Database\QueryException $e) {
+                //dd($e->getMessage()); PARA OBTENER ERROR
+                return response()->json(false);
+            }
+        }
+        else
+        {
+            return response()->json("No existe un usuario con ese mail!");
+        }
+    }
 }

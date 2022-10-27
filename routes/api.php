@@ -22,3 +22,5 @@ Route::post('/loginUser', [App\Http\Controllers\ApiController::class, 'loginUser
 Route::post('/registerUser', [App\Http\Controllers\ApiController::class, 'registerUser'])->name('registerUser')->middleware('apikey.validator');
 Route::post('/getColmenasUser', [App\Http\Controllers\ApiController::class, 'getColmenasUser'])->name('getColmenasUser')->middleware('apikey.validator');
 Route::post('/createColmena', [App\Http\Controllers\ApiController::class, 'createColmenaApi'])->name('createColmenaApi')->middleware('apikey.validator');
+Route::post('/modifyColmena', [App\Http\Controllers\ApiController::class, 'modifyColmenaApi'])->name('modifyColmenaApi')->middleware('apikey.validator');
+Route::post('/deleteColmena', [App\Http\Controllers\ApiController::class, 'deleteColmenaApi'])->name('deleteColmenaApi')->middleware('apikey.validator');
