@@ -9,7 +9,7 @@
       <section class="jumbotron text-center" style="margin-bottom: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
         <div class="container">
           <h1 class="jumbotron-heading">Mis Colmenas</h1>
-          <p class="lead text-muted">Agrega con el boton tus colmenas para poder acceder a ellas facilmente. Podras visualizar la actividad de sus sensores y controlar variables. Es importante cargar los datos bien!</p>
+          <p class="lead text-muted">Agregá con el boton tus colmenas para poder acceder a ellas facilmente. Podrás visualizar la actividad de sus sensores y controlar cuando cosechar. Es importante cargar los datos bien!</p>
           <p>
             <a href="#" class="btn btn-primary my-2" data-toggle="modal" data-target="#modal_carga">Agrega tu Colmena</a>
           </p>
