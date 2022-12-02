@@ -205,10 +205,14 @@
               success:function(response){
 
                 for(clave_medidas in response){
-    
                     let medida_unica = response[clave_medidas];
                     let t_medida = response[clave_medidas].time;
 
+                    if(medida_unica.hasOwnProperty('extract'))
+                    {
+                        continue;
+                    }
+                    
                     //TEMPERATURA
                     let itemp_medida = response[clave_medidas].temp;
                     let etemp_medida = response[clave_medidas].etemp;

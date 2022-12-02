@@ -36,7 +36,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a class="btn btn-sm btn-outline-info" href="{{ route('dashboard', $colmena->codigo_colmena) }}">Visualizar</a>
-                        <a class="btn btn-sm btn-outline-danger" href="">Control</a>
+                        <a class="btn btn-sm btn-outline-danger" href="{{ route('control', $colmena->codigo_colmena) }}">Control</a>
                       </div>
                       @if( $colmena->activa == true)
                         <small class="text-muted"><i class="material-icons" style="color: #00FF00; font-size: 28px;" title="Activa">hive</i></small>

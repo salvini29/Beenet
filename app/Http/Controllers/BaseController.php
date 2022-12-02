@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Auth;
 use App\Models\Colmena;
 use App\Models\User;
@@ -20,6 +21,20 @@ class BaseController extends Controller
     public function dashboard(Request $request)
     {
         return view('dashboard')->with('codigo', $request->codigo);
+    }
+    public function control(Request $request)
+    {
+        $url = "https://beenet-2cf7b-default-rtdb.firebaseio.com/did/".$request->codigo.".json";
+        $response = Http::post($url,[
+            'extract' => true,
+            'time' => time()
+        ]);
+        if( $response->status() == 200 ){
+            return redirect()->route('home')->with('success', 'Se ha cosechado la colmena!');
+        }
+        else {
+            return redirect()->route('home')->with('failed', 'No se ha podido cosechar la colmena!');
+        }
     }
     public function createColmena(Request $request)
     {

@@ -25,5 +25,6 @@ Route::get('/redirect_failed', [App\Http\Controllers\BaseController::class, 'red
 Route::get('/', [App\Http\Controllers\BaseController::class, 'landing'])->name('landing');
 Route::post('/searchBarPost', [App\Http\Controllers\BaseController::class, 'searchBarPost'])->name('searchBarPost');
 Route::get('/dashboard/{codigo}', [App\Http\Controllers\BaseController::class, 'dashboard'])->name('dashboard');
+Route::get('/control/{codigo}', [App\Http\Controllers\BaseController::class, 'control'])->name('control');
 
 
